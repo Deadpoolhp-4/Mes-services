@@ -5,7 +5,8 @@ body {
 .main{
     
     height: 100vh;
-    background-image: url('/assets/');
+    background-image: url('/assets/IMAGES/bg.png');
+    background-size: cover;
 
 }
 
@@ -45,7 +46,8 @@ justify-content: center;
 
 .Navbar .menu ul li a {
     display: block;
-    color:#111;
+    color:white;
+    font-weight: bold;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -94,7 +96,7 @@ justify-content: center;
 /* SECTION - 2*/
 .about-us{
     display: flex;
-    padding-top: 50px;
+    padding-top: 300px;
     height: 100vh;
 }
 .about-us-text{
@@ -127,16 +129,25 @@ justify-content: center;
 .box-1{
     width: 200px;
     height: 150px;
-    background-image: url('/assets/IMAGES/img-sample.jpg');
+    background-image: url('/assets/IMAGES/Rectangle 57.png');
     background-size: cover;
     background-position: center;
     border-radius: 10px;
     box-shadow: 0px 0px 10px;
 }
+.box-1 h1{
+    font-size: 2rem;
+    color:white;
+    align-items: left;
+    display: flex;
+    justify-content: left;
+    padding: 20px;
+
+}
 .box-2{
     width: 200px;
     height: 150px;
-    background-image: url('/assets/IMAGES/img-sample.jpg');
+    background-image: url('/assets/IMAGES/Rectangle 58.png');
     background-size: cover;
     background-position: center;
     border-radius: 10px;
@@ -145,7 +156,7 @@ justify-content: center;
 .box-3{
     width: 430px;
     height: 150px;
-    background-image: url('/assets/IMAGES/img-sample.jpg');
+    background-image: url('/assets/IMAGES/Rectangle 59.png');
     background-size: cover;
     background-position: center;
     border-radius: 10px;
@@ -267,7 +278,17 @@ justify-content: center;
     padding: 10px;
     background-color: #f0f0f0;
     border: 1px solid #ccc;
-    border-radius: 10px;
+    border-radius: 20px;
+    background-image: url('/assets/IMAGES/Rectangle 57.png');
+    background-size:cover;
+}
+.why-box h1{
+    font-size: 2.5rem;
+    color:whitesmoke;
+    align-items: left;
+    display: flex;
+    justify-content: left;
+    padding: 20px;
 }
 
 .why-cards {
@@ -325,7 +346,6 @@ justify-content: center;
     padding: 10px 20px;
     font-size: 1rem;
     font-weight: bold;
-    margin-top: 15px;
     cursor: pointer;
     box-shadow:  0px 0px 5px;
     height: 50px;
@@ -342,12 +362,22 @@ justify-content: center;
     padding-right: 20px;
 }
 .products-box {
+    background-image: url('/assets/IMAGES/Rectangle 57.png');
+    background-size: cover;
     width: 250px;
     height: 180px;
     padding: 10px;
     background-color: #f0f0f0;
     border: 1px solid #ccc;
-    border-radius: 10px;
+    border-radius: 20px;
+}
+.products-box h1{
+    font-size: 2rem;
+    color:white;
+    align-items: left;
+    display: flex;
+    justify-content: left;
+    padding: 20px;
 }
 .products-card {
     width: 300px;
@@ -403,7 +433,7 @@ justify-content: center;
 
 .logo-slider {
     overflow-x:hidden;
-    padding: 30px;
+    padding: 80px;
     padding-top: 90px;
 }
 /* footer */
@@ -427,10 +457,22 @@ justify-content: center;
     height: 100px;
     background-color: #f0f0f0;
     border: 1px solid #ccc;
-    border-radius: 10px;
+    border-radius: 20px;
     padding: 20px;
 }
-
+ .b1 {
+    background-image: url('/assets/IMAGES/Rectangle 57.png');
+    background-size: cover;
+    
+}
+.b1 h1{
+    font-size: 2rem;
+    color:white;
+    align-items: left;
+    display: flex;
+    justify-content: left;
+    padding: 10px;
+}
 .map {
     flex: 2;
     border-radius: 10px; /* Rounded corners for the map section */
@@ -469,11 +511,12 @@ justify-content: center;
     justify-content: space-between;
     align-items: center;
     width: 100%;
+    
 }
 
 .icon-footer-container ul {
     display: flex;
-    width: 100%;
+    gap: 20px;
     list-style: none;
     padding: 0;
     align-items: center; /* Align items vertically in the center */
@@ -498,3 +541,11 @@ justify-content: center;
     margin-right: 10px; /* Space between logo and text */
 }
 
+ .email{
+    color: black;
+    font-size: 0.8rem;
+    font-weight: bold;
+} 
+.li-icons{
+    padding-right:10px ;
+}
