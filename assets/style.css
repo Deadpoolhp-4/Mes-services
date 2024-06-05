@@ -3,24 +3,26 @@ body {
     font-family: Arial, sans-serif;
 }
 .main{
-    
+
     height: 100vh;
     background-image: url('/assets/IMAGES/bg.png');
     background-size: cover;
 
 }
 
-.logo  {
+.logo{
+
 display: flex;
 justify-content: center;    
+
 }
 
-.Navbar {
+.Navbar{
     overflow: hidden;
     color: black;
 }
 
-.Navbar .nav-container {
+.Navbar .nav-container{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -28,7 +30,7 @@ justify-content: center;
     margin-right: 30px;
 }
 
-.Navbar .logo img {
+.Navbar .logo img{
     height: 50px;
 }
 
@@ -548,4 +550,40 @@ justify-content: center;
 } 
 .li-icons{
     padding-right:10px ;
+}
+@media (max-width: 768px) {
+    body {
+        font-size: 14px; /* Smaller font size for tablets */
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        font-size: 12px; /* Even smaller font size for mobile phones */
+    }
+}
+@media (max-width: 768px) {
+    .Navbar .menu ul {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+@media (max-width: 768px) {
+    .services, .products-container, .footer {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+@media (max-width: 768px) {
+    .box-1, .box-2, .box-3, .products-box {
+        width: 100%; /* Full width on smaller screens */
+        height: auto; 
+        display: flex;
+        flex-direction: column;/* Maintain aspect ratio */
+    }
+}
+@media (max-width: 768px) {
+    .banner, .about-us, .products {
+        padding-right: 10%; /* Less padding on smaller screens */
+    }
 }
