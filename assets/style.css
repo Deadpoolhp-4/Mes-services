@@ -1,6 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
     overflow-x: hidden;
 }
 .main{
@@ -72,16 +73,19 @@ justify-content: center;
     
 }
 .banner h2{
-    font-size: 2rem;
+    font-size: 3rem;
     color:black;
     font-weight: bold;
+    font-style: 'Roboto';
 }
 .banner p{
     font-size: 0.8rem;
     color:black;
     font-weight: bold;
+    font-style: 'Roboto';
 }
 .banner button{
+  
     background-color:whitesmoke;
     color:black;
     border-radius: 15px;
@@ -90,12 +94,23 @@ justify-content: center;
     font-weight: bold;
     margin-top: 20px;
     cursor: pointer;
-    box-shadow:  0px 0px 10px;
+    box-shadow:  2px 3px 2px;
+    border:none;
 }
 .banner button:hover{
-    background-color: #111;
-    color: white;
+    background-color:whitesmoke;
+    
+    color: black;
 }  
+.banner button {
+    transition: transform 0.2s; /* Smooth transition for the transform property */
+    cursor: pointer; /* Changes the cursor to a pointer to indicate it's clickable */
+}
+
+.banner button:active {
+    transform: scale(1.1); /* Scales up the button to 110% of its size when clicked */
+}
+
 /* SECTION - 2*/
 .about-us{
     display: flex;
@@ -107,11 +122,14 @@ justify-content: center;
     order: 2;
     width: 50%;
     text-align: left;
-    padding: 50px;
+    padding-top: 150px;
+    font-style: 'Roboto';
 }
 .about-us-text p{
-    font-size: 1.5rem;
+    width: auto;
+    font-size: 1.3rem;
     color: black;
+    font-style: 'Roboto';
 }
 .boxs .box-wrap {
     display: flex;
