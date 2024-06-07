@@ -60,7 +60,8 @@
     </section>
 </section>
 <!-- section-2 -->
- <section class="about-us">
+<section class="all">
+    <section class="about-us">
     <section class="about-us-text">
         <p>
             Introduction: Established in 2016, we aim to be a prominent solution provider in industrial electronic repairing.<br>
@@ -88,9 +89,10 @@
           </div>
         </div>  
     </section>
-</section>
+    </section>
 <!-- section-3-services -->
 <section class="services">
+    <section class="services-container">
     <section class="cards">
         <div class="card-container">
             <div class="card" id="card1">
@@ -112,9 +114,9 @@
                 </div>
             </div>
             
-        </div>
+        
 
-        <div class="card-container">
+        
             <div class="card" id="card2">
                 <div class="card-front">
                     <h3>Unique key Factor</h3>
@@ -150,7 +152,8 @@
           </div>
         </div>  
     </section>
-</section>
+    </section>
+    </section>
 <!-- section-4-why us? -->
 <section class="why-us">
     <div class="why-us-container">
@@ -188,20 +191,22 @@
             </div>
         </div>
     </div>
-</section>
+    </section>
 <!-- products -->
 <section class="products">
 
     <div class="products-container">
         <div class="products-box">
             <h1>Our Products</h1>
+            <div class="products-button">
             <a href="product.html">
                 <button class="btn-2">All Products
                     <span class="arrow-icon">&#10148;</span> 
                 </button>
             </a>
+            </div>
         </div>
-
+        <div class="products-cards">
         <div class="product-card" id="productCard1">
             <div class="product-card-front">
                 <h3>Challenges Faced by Customers</h3>
@@ -226,8 +231,9 @@
                 <button onclick="flipCard('productCard2')" class="btn">Back</button>
             </div>
         </div>
+        </div>
     </div>  
-</section>
+    </section>
 <!-- slider-autoplay-logo  -->
 <section class="logo-slider">
     <div class="swiper-container">
@@ -241,7 +247,7 @@
             <div class="swiper-slide"><img src="/assets/IMAGES/icon7.png" alt="Logo 7"></div>
         </div>
     </div>
-</section>
+    </section>
 
 <script>
     var swiper = new Swiper('.swiper-container', {
@@ -251,6 +257,20 @@
         autoplay: {
             delay: 2500,
             disableOnInteraction: false,
+        },
+        breakpoints: {
+            1024: {
+                slidesPerView: 3,
+                spaceBetween: 30,
+            },
+            768: {
+                slidesPerView: 2,
+                spaceBetween: 20,
+            },
+            425: {
+                slidesPerView: 1,
+                spaceBetween: 10,
+            },
         },
     });
 </script>
@@ -308,6 +328,7 @@
             </div>
         </div>
     </section>
+</section>
 </section>
 <section class="icon-footer">
     <div class="icon-footer-container">
