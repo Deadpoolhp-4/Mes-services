@@ -78,22 +78,24 @@ justify-content: center;
     color:black;
     font-weight: bold;
     font-style: 'Roboto';
+    margin-bottom: 0px;
 }
 .banner p{
     font-size: 0.8rem;
     color:black;
     font-weight: bold;
     font-style: 'Roboto';
+    margin-bottom: 100px;
+    margin-top: 0px;
 }
 .banner button{
-  
+
     background-color:whitesmoke;
     color:black;
     border-radius: 15px;
     padding: 10px 20px;
     font-size: 1rem;
     font-weight: bold;
-    margin-top: 20px;
     cursor: pointer;
     box-shadow:  2px 3px 2px;
     border:none;
@@ -655,21 +657,26 @@ justify-content: center;
     height: 230px;
     background-color: #f0f0f0;
     border: 1px solid #ccc;
-    border-radius: 20px;
+    border-radius: 30px;
     padding: 20px;
 }
  .b1 {
     background-image: url('/assets/IMAGES/Rectangle 57.png');
     background-size: cover;
     
+    
 }
-.b1 h1{
+.b1 {
+    position: relative; /* This makes .b1 a reference point for positioning its children */ 
+}
+
+.b1 h1 {
+    position: absolute; /* Position the h1 absolutely within .b1 */
+    bottom: 0; /* Align the bottom of h1 with the bottom of .b1 */
+    width: 100%; /* Optional: Makes h1 width equal to .b1 width */
     font-size: 2rem;
-    color:white;
-    align-items: left;
-    display: flex;
-    justify-content: left;
-    padding: 10px;
+    color: white;
+    text-align: left; /* Optional: Centers the text horizontally */
 }
 .map {
     flex: 2;
@@ -689,13 +696,48 @@ justify-content: center;
 
 .contact-details {
     flex: 1; /* Takes remaining space */
-    padding-right: 20px;
+    word-wrap: break-word;
    /* Adds some padding between the contact details and the iframe */
 }
 ul{
     list-style: none;
 }
-
+.b2{
+    position: relative;
+}
+.b2 ul li{
+    padding-bottom: 20px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: black;
+    font-style: 'Roboto';
+    
+}
+.b2 img{
+    
+    width: 130px;
+    height: 80px;
+    float:right;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding-right: 20px;
+    padding-bottom: 20px;
+}
+.contact-details  h1{
+    font-size: 1.5rem;
+   margin-top: 0;
+    color: black;
+    font-style: 'Roboto';
+}
+.contact-details ul li{
+    font-size: 0.9rem;
+    padding-bottom: 30px;
+    color: black;
+    font-style: 'Roboto';
+    margin-left: 0px;
+    
+}
 .iframe {
     flex: 2; /* Allows the iframe to take twice the space of contact details */
     border-radius: 10px; /* Rounded corners for the iframe container */
@@ -718,7 +760,7 @@ ul{
 
 .icon-footer-container ul {
     display: flex;
-    gap: 20px;
+    gap: 0px;
     list-style: none;
     padding: 0;
     align-items: center; /* Align items vertically in the center */
@@ -744,14 +786,6 @@ ul{
     margin-right: 10px; /* Space between logo and text */
 }
 
- .email{
-    color: black;
-    font-size: 0.8rem;
-    font-weight: bold;
-} 
-.li-icons{
-    padding-right:10px ;
-}
 
 @media screen and (max-width: 768px) {
 
