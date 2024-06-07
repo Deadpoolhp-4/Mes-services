@@ -757,6 +757,9 @@ ul{
     width: 100%;
     
 }
+.icon-footer-container .logo-text {
+    font-weight: bold; /* Space between logo and text */
+}
 
 .icon-footer-container ul {
     display: flex;
@@ -774,17 +777,16 @@ ul{
 }
 
 .icon-footer-container ul li.logo-text {
-    flex-grow: 1; /* Allows the logo-text to take up the necessary space */
+    padding-left: 20px;/* Allows the logo-text to take up the necessary space */
 }
 
 .icon-footer-container ul li.icons {
     display: flex;
+    padding-right: 30px;
     
 }
 
-.icon-footer-container ul li.logo-text img {
-    margin-right: 10px; /* Space between logo and text */
-}
+
 
 
 @media screen and (max-width: 768px) {
