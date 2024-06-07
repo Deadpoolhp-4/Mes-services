@@ -3,6 +3,7 @@ body {
     margin: 0;
     font-family: 'Roboto', sans-serif;
     overflow-x: hidden;
+    background-repeat: no-repeat;
 }
 .main{
 
@@ -111,6 +112,96 @@ justify-content: center;
     transform: scale(1.1); /* Scales up the button to 110% of its size when clicked */
 }
 
+@media screen and (max-width: 768px) {
+    /* SECTION - 1*/
+    *{
+     
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .main {
+        background-position: center right;
+        background-size: 100%;
+        padding: auto; /* Shift focus to the right on medium screens */
+    }
+    .logo{
+       background-color: white;
+    }
+    .logo img{
+        height: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .logo h3{
+        display: none;
+    }
+    .Navbar .menu ul li a{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .main {
+        background-position: 80% center right; 
+        background-size: 100%;
+        background-repeat: no-repeat;/* Shift focus further to the right on small screens */
+        padding:auto;
+    }
+    .logo img{
+        height: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .logo h3{
+        display: none;
+    }
+    .Navbar .menu ul li a{
+        display: none;
+    }
+    .banner h2{
+        font-size: 2rem;
+    }
+    .banner p{
+        font-size: 0.8rem;
+    }
+    .banner button{
+        font-size: 0.8rem;
+    }
+
+}
+
+@media screen and (max-width: 320px) {
+    .main {
+        background-position: 90% center right;
+        padding:auto;
+         /* Maximize the shift to the right on very small screens */
+    }
+    .logo img{
+        height: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .logo h3{
+        display: none;
+    }
+    .Navbar .menu ul li a{
+        display: none;
+    }
+    .banner h2{
+        font-size: 2rem;
+    }
+    .banner p{
+        font-size: 0.8rem;
+    }
+    .banner button{
+        font-size: 0.8rem;
+    }
+}
+
+
 /* SECTION - 2*/
 .about-us{
     display: flex;
@@ -183,6 +274,53 @@ justify-content: center;
     border-radius: 20px;
     box-shadow: 0px 0px 3px;
 }
+@media screen and (max-width: 768px) {
+    .about-us {
+        flex-direction: column; /* Stack the items vertically */
+    }
+    
+
+    .about-us-text {
+        width: 100%; /* Full width */
+        order: 2; /* Text comes first */
+        padding-top: 50px; 
+        font-size: 1rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;/* Less padding on top */
+    }
+
+    .box-wrap {
+      width: 100%;
+      height: 30%;
+    }
+
+    .box-1, .box-2, .box-3 {
+        max-width: 100px;
+        max-height: 100px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .about-us-text p {
+        font-size: 1rem; 
+        display: flex;
+        /* Smaller font size for very small screens */
+    }
+    .box-wrap {
+        width: 100px;
+
+        height: 170px;
+      }
+  
+
+    .box-1 h1, .box-2 h1, .box-3 h1 {
+        font-size: 1.5rem; /* Even smaller font size */
+    }
+}
+@media screen and (max-width: 320px) {
+    
+}
 /* SECTION - 3*/
 
 .services{
@@ -227,7 +365,12 @@ justify-content: center;
     justify-content: center;
     align-items: center;
    
+   
     /* Adds space between cards */
+}
+.card-front img{
+    width: 80%;
+    height: 50%;
 }
 
 .card:hover {
@@ -283,6 +426,21 @@ justify-content: center;
     row-gap: 40px;
     column-gap: 40px;
 }
+@media screen and (max-width: 768px) {
+    .services, .card-container, .cards {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .card {
+        width: 100%; /* Full width on smaller screens */
+        margin-right: 0; /* Remove margin to fit full width */
+    }
+
+    .boxs-2 .box-wrap-2 {
+        width: 100%; /* Full width for better responsiveness */
+    }
+}
 /* SECTION - 4*/
 .why-us{
     padding-top: 50px;
@@ -324,12 +482,19 @@ justify-content: center;
 }
 
 .why-card {
-    width: 370px;
+    width: 350px;
     height: 400px;
     margin-right: 20px;
     position: relative; /* Ensure this is set */
     transform-style: preserve-3d; /* Ensures children are in 3D space */
     transition: transform 0.6s;
+}
+.why-card img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 50%;
 }
 
 .why-card:hover {
@@ -342,7 +507,8 @@ justify-content: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: left;
+    align-items: center;
+    text-align: left;
     width: 100%;
     height: 100%;
     cursor: pointer;
@@ -523,7 +689,11 @@ justify-content: center;
 
 .contact-details {
     flex: 1; /* Takes remaining space */
-    padding-right: 20px; /* Adds some padding between the contact details and the iframe */
+    padding-right: 20px;
+   /* Adds some padding between the contact details and the iframe */
+}
+ul{
+    list-style: none;
 }
 
 .iframe {
@@ -557,7 +727,8 @@ justify-content: center;
 
 .icon-footer-container ul li {
     display: flex;
-    align-items: center; /* Align items vertically in the center */
+    align-items: center;
+    list-style: none; /* Remove default list style */
 }
 
 .icon-footer-container ul li.logo-text {
@@ -583,33 +754,18 @@ justify-content: center;
 }
 
 @media screen and (max-width: 768px) {
-    .Navbar .menu ul li {
-        float: none;
-        display: block;
-        text-align: center;
-    }
+
 }
 
 @media screen and (max-width: 425px) {
-    .Navbar .menu ul li {
-        float: none;
-        display: block;
-        text-align: center;
-    }
+
 }
 
 @media screen and (max-width: 320px) {
-    .Navbar .menu ul li {
-        float: none;
-        display: block;
-        text-align: center;
-    }
+
 }
 @media screen and (max-width: 280px) {
-    .Navbar .menu ul li {
-        float: none;
-        display: block;
-        text-align: center;
-    }
+    
 }
+
 
